@@ -1,18 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
+import Weather from "./Weather"
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Counter</h1>
-        <p>Current Count {count}</p>
-        <button type='button' onClick={() => setCount((prev) => prev + 1)}>Increment Count</button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-      </header>
+    <div className="app-container">
+      <h1>Path2Tech Weather App</h1>
+      <Weather />
     </div>
   );
 }
